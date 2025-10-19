@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="mz.oficina.AutoCheck.controller.VeiculoController"
+      spacing="10" alignment="TOP_CENTER">
+
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+
+    <Label text="Gestão de Veículos" style="-fx-font-size: 18px;"/>
+
+    <HBox spacing="10">
+        <TextField fx:id="txtMatricula" promptText="Matrícula"/>
+        <TextField fx:id="txtMarca" promptText="Marca"/>
+        <TextField fx:id="txtModelo" promptText="Modelo"/>
+        <ComboBox fx:id="comboCliente" promptText="Selecionar Cliente"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Button text="Salvar" onAction="#salvarVeiculo"/>
+        <Button text="Excluir" onAction="#excluirVeiculo"/>
+        <Button text="Limpar" onAction="#limparCampos"/>
+    </HBox>
+
+    <TableView fx:id="tableVeiculos" prefHeight="300" prefWidth="600">
+        <columns>
+            <TableColumn fx:id="colId" text="ID" prefWidth="50"/>
+            <TableColumn fx:id="colMatricula" text="Matrícula" prefWidth="100"/>
+            <TableColumn fx:id="colMarca" text="Marca" prefWidth="100"/>
+            <TableColumn fx:id="colModelo" text="Modelo" prefWidth="100"/>
+            <TableColumn fx:id="colCliente" text="Cliente" prefWidth="150"/>
+        </columns>
+    </TableView>
+
+</VBox>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="mz.oficina.AutoCheck.controller.DashboardController"
+      spacing="20" alignment="CENTER" style="-fx-padding: 20;">
+
+    <Text text="Painel Principal - AutoCheck" style="-fx-font-size: 24px;"/>
+
+    <HBox spacing="10">
+        <Button text="Gerir Clientes" onAction="#abrirClientes"/>
+        <Button text="Gerir Veículos" onAction="#abrirVeiculos"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Button text="Sair" onAction="#sair"/>
+    </HBox>
+</VBox>

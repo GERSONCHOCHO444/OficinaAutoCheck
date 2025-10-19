@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="mz.oficina.AutoCheck.controller.ClienteController"
+      spacing="10" alignment="TOP_CENTER">
+
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+
+    <Label text="Gestão de Clientes" style="-fx-font-size: 18px;"/>
+
+    <HBox spacing="10">
+        <TextField fx:id="txtNome" promptText="Nome"/>
+        <TextField fx:id="txtTelefone" promptText="Telefone"/>
+        <TextField fx:id="txtEmail" promptText="Email"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Button text="Salvar" onAction="#salvarCliente"/>
+        <Button text="Excluir" onAction="#excluirCliente"/>
+        <Button text="Limpar" onAction="#limparCampos"/>
+    </HBox>
+
+    <TableView fx:id="tableClientes" prefHeight="300" prefWidth="500">
+        <columns>
+            <TableColumn fx:id="colId" text="ID" prefWidth="50"/>
+            <TableColumn fx:id="colNome" text="Nome" prefWidth="150"/>
+            <TableColumn fx:id="colTelefone" text="Telefone" prefWidth="150"/>
+            <TableColumn fx:id="colEmail" text="Email" prefWidth="150"/>
+        </columns>
+    </TableView>
+
+</VBox>
