@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="231.0" prefWidth="233.0" spacing="10" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mz.oficina.AutoCheck.controller.LoginController">
+
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <Label style="-fx-font-size: 18px;" text="Login no Sistema" />
+
+    <TextField fx:id="txtUser" prefHeight="36.0" prefWidth="193.0" promptText="Usuário" styleClass="textfield" stylesheets="@../css/loginDesign.css">
+      <font>
+         <Font name="Arial Black" size="12.0" />
+      </font></TextField>
+    <PasswordField fx:id="txtPassword" prefHeight="38.0" prefWidth="193.0" promptText="Senha" styleClass="textfield" stylesheets="@../css/loginDesign.css">
+      <font>
+         <Font name="Arial Black" size="12.0" />
+      </font></PasswordField>
+
+    <Button onAction="#handleLogin" prefHeight="33.0" prefWidth="69.0" styleClass="login-btn" stylesheets="@../css/loginDesign.css" text="Entrar">
+      <font>
+         <Font size="1.0" />
+      </font></Button>
+</VBox>
