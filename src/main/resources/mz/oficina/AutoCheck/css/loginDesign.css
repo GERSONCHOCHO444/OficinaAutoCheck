@@ -2,7 +2,6 @@
     -fx-background-color: linear-gradient (to bottom, #21365d, #294d90);
     -fx-background-radius: 10px;
     -fx-border-width: .4px;
-    -fx-font-size: 14px;
     -fx-font-family: "Arial Black";
     -fx-border-radius:10px;
     -fx-border-color: #000;
@@ -17,4 +16,10 @@
 
 .textfield:hover{
     -fx-border-color: #000;
+}
+
+.left-form{
+    -fx-background-color:linear-gradient(to bottom right, #4d59b9, #091257);
+    -fx-border-color:#000;
+    -fx-border-width: .4px 0px .4px .4px;
 }
